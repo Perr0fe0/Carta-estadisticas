@@ -74,11 +74,11 @@ html {
     flex-direction: column;
     border-radius: 50%;
     aspect-ratio: 1/1;
-    width: 14rem;
+    width: 15rem;
     color: var(--neutral-light-lavender);
     place-content: center;
     margin-inline: auto;
-    background: linear-gradient(var(--gradient-bg-light-royal-blue), var(--gradient-bg-light-stale-blue));
+    background: linear-gradient(var(--gradient-bg-light-royal-blue), hsla(234, 85%, 45%, 0));
     font-size: 1.5rem;
     margin-bottom: 2rem;
     
