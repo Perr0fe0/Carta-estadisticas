@@ -45,11 +45,14 @@ html {
   body{
     font-family: 'Hanken Grotesk';
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
+    flex-direction: column; 
+  }
+  @media (min-width: 758px) {
+      body{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
   }
   h2{
     font-size: 1.8rem;
@@ -57,17 +60,29 @@ html {
   .principal-card{
     display: flex;
     border-radius: 2rem;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  @media (min-width: 758px) {
+    .principal-card{
+        flex-direction: row;
     max-width: 60rem;
-    gap: 3rem;
     width: 60rem;
+    }
   }
   .results{
-    max-width: 30rem;
+    
     font-size: 1.8rem;
     text-align: center;
     background: linear-gradient(var(--gradient-bg-light-stale-blue),var(--gradient-bg-light-royal-blue));
     padding: 3rem 5rem 6rem 5rem;
     border-radius: 2rem;
+  }
+  @media (min-width: 758px) {
+      .results{
+        max-width: 30rem;
+      }
   }
   .results__score{
     display: flex;
@@ -93,19 +108,26 @@ html {
     font-weight: bolder;
   }
   .summary{
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     width: 100%;
+  }
+  .summary__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
  .summary__items{
     display: flex;
     font-size: 1.8rem;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin:0 auto 1rem;
     border-radius: 1rem;
     width: 90%;
     padding: 0 1rem;
     
  }
+ 
+ 
  .results__rank{
     color: var(--neutral-white);
  }
@@ -113,11 +135,7 @@ html {
     color: var(--neutral-light-lavender);
     margin: 0 -3rem;
  }
- footer{
-    position: fixed;
-    bottom: 0;
-    padding-bottom: 2rem;
- }
+ 
  .bg-red{
     color: var(--primary-light-red);
     background-color: hsla(0, 100%, 67%, .1) ;
@@ -146,6 +164,10 @@ html {
     display: flex;
     gap: 1rem
  }
+ .summary__title{
+    margin-left: 2rem;
+ }
+ 
 
  .button{
     width: 90%;
@@ -157,13 +179,28 @@ html {
     color: var(--neutral-white);
     font-family: 'Hanken Grotesk';
     border-style: none;
+    
  }
+ 
  .button:hover{
     transition: 0.3s;
     background-color: var(--gradient-bg-light-royal-blue);
  }
-.shadow{
-    -webkit-box-shadow: 0px -1px 7px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -1px 7px 0px rgba(0,0,0,0.75);
-box-shadow: 0px -1px 7px 0px rgba(0,0,0,0.75);
+ footer{
+    bottom: 0;
+    margin-top: 5rem;
+    align-self: center;
+ }
+ @media (min-width: 758px) {
+     footer{
+        position: fixed;
+        margin-bottom: 2rem;
+     }
+ }
+@media (min-width: 758px) {
+    .shadow{
+        -webkit-box-shadow: 0px -1px 7px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px -1px 7px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px -1px 7px 0px rgba(0,0,0,0.75);
+    }
 }
