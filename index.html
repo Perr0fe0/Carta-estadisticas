@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="/css/style.css">
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
+
+
 </head>
+
 <body>
   <main class="principal-card shadow">
     <div class="results">
       <h2 class="results__title">Your Result</h2>
       <p class="results__score">
         <span>76</span>
-      of 100</p>
+        of 100
+      </p>
       <div class="results__comment">
         <h2 class="results__rank">Great</h2>
         <p>You scored higher than 65% of the people who have taken these tests.</p>
@@ -26,51 +30,34 @@
 
     <div class="summary">
       <h2>Summary</h2>
-      <div class="summary__items">
+      <div class="summary__items bg-red">
         <p>Reaction</p>
-        <p>80 / 100</p>
+        <p class="actual-score">80 <span class="total-score">/ 100</span></p>
       </div>
-      <div class="summary__items">
+      <div class="summary__items bg-yellow">
+
         <p>Memory</p>
-        <p>92 / 100</p>
+        <p class="actual-score">92 <span class="total-score">/ 100</span></p>
       </div>
-      <div class="summary__items">
+      <div class="summary__items bg-green">
         <p>Verbal</p>
-        <p>61 / 100</p>
+        <p class="actual-score">61 <span class="total-score">/ 100</span></p>
       </div>
-      <div class="summary__items">
+      <div class="summary__items bg-blue">
         <p>Visual</p>
-        <p>72 / 100</p>
+        <p class="actual-score">72 <span class="total-score">/ 100</span></p>
       </div>
       <input type="button" value="Continue">
-      
+
     </div>
   </main>
- 
 
-  
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
   <footer>
     <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/Perr0fe0">Alexander</a>.
-  </div></footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Perr0fe0">Alexander</a>.
+    </div>
+  </footer>
 </body>
+
 </html>
