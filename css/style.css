@@ -100,6 +100,7 @@ html {
   }
   .results__title{
     color: var(--neutral-light-lavender);
+    font-size: 1.8rem;
     margin-bottom: 3rem;
   }
   .results__score span{
